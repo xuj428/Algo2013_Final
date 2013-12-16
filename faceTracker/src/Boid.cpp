@@ -17,7 +17,8 @@ Boid::Boid( ofVec2f position, ofVec2f velocity) {
     vel = velocity;
     damping = 0.99;
     p.loadImage("yellow.png");
-    size=ofRandom(15,50);
+    //p.loadImage("yeah.png");
+    size=ofRandom(25,65);
 }
 
 void Boid::applyForce( ofVec2f force ){

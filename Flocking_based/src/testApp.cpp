@@ -23,6 +23,7 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
+    ofFill();
       // ofPushMatrix();{
 //        ofTranslate( ofGetWindowSize() / 2.0 );
         flocker.draw();

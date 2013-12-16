@@ -26,14 +26,16 @@ void testApp::update(){
     faceCenter.set(tracker.getPosition());
     
    
-    if(tracker.getFound()&&tracker.getPosition().x !=0){
+    if(tracker.getFound()&&tracker.getPosition().x !=0 && tracker.getPosition().y !=0){
         flocker.applyForces(faceCenter,tracker.getScale()*4.5, 0.4, 0.75);
+        
         flocker.update();
         
 //        cout<<tracker.getDirection(ofxFaceTracker::FACING_LEFT) <<endl;
         
-       // cout<<tracker.getOrientation()<<endl;
+        //cout<<tracker.getOrientation()<<endl;
     }
+    
     //cout<< tracker.getScale()<<endl;
     
     
